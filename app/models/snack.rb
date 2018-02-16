@@ -5,4 +5,5 @@ class Snack < ApplicationRecord
   def price_to_dollars
     price / 100.0
   end
+
 end
