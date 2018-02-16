@@ -5,3 +5,5 @@
     <li><%= snack.name %>: $<%= snack.price_to_dollars %></li>
   </ul>
 <% end %>
+
+<h2>Average Price: $<%= @machine.snacks.average_price %></h2>
