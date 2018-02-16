@@ -6,4 +6,7 @@ class Snack < ApplicationRecord
     price / 100.0
   end
 
+  def self.average_price
+    average(:price)/100.0 if !average(:price).nil?
+  end
 end
